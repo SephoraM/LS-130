@@ -111,7 +111,7 @@ class TodoList
   end
 
   def mark_done(str)
-    find_by_title(str).done!
+    find_by_title(str) && find_by_title(str).done!
   end
 
   def mark_all_done
